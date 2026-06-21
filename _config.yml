@@ -1,0 +1,38 @@
+# =========================================================
+# Ruthwell Cross — site settings
+# =========================================================
+# Part of the Visionary Cross Project. This repository holds the
+# Ruthwell Cross site: the 3DHOP viewer, its pages, panels, and models.
+
+title: Ruthwell Cross
+email: humanitiesinnovationlab@gmail.com
+description: >-
+  A digital edition of the Ruthwell Cross, with an interactive 3D model
+  and panel-by-panel iconographic commentary.
+
+# baseurl: the subpath this project site is served from, so that any links
+# using relative_url resolve to /ruthwell instead of the domain root (which
+# belongs to the user-page repo). The 3DHOP content pages use plain relative
+# paths (../../assets/css/main.css) and work regardless, but this keeps the
+# Jekyll setup identical to the hub. Local `jekyll serve` previews at
+# http://localhost:4000/ruthwell/.
+baseurl: "/ruthwell"
+# url: the base hostname & protocol for the published site.
+url: "https://Jocelyn-McKnight.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Sass: partials live in _sass/, compiled via assets/css/main.scss.
+# "expanded" keeps the generated CSS readable; use "compressed" to minify.
+sass:
+  style: expanded
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - README.md
